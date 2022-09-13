@@ -1,5 +1,7 @@
+import 'package:catalogue/models/catalog.dart';
 import 'package:flutter/material.dart';
 import 'package:catalogue/widgets/drawer.dart';
+import 'package:catalogue/widgets/item_widget.dart';
 
 class HomePage extends StatelessWidget {
   @override
@@ -8,10 +10,13 @@ class HomePage extends StatelessWidget {
       appBar: AppBar(
         title: Text("My Store"),
       ),
-      body: Center(
-        child: Container(
-          child: Text("This is My Store Home Page"),
-        ),
+      body: ListView.builder(
+        itemCount: CatalogModel.items.length,
+        itemBuilder: (context, index) {
+          return ItemWidget(
+            item : CatalogModel.items[index],
+          );
+        },
       ),
       drawer: MyDrawer(),
     );
