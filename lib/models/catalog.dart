@@ -1,23 +1,16 @@
 class CatalogModel {
-  static final items = [
-    Item(
-        id: 1,
-        name: "C++ Programming Language",
-        desc: "Bjarne Stroustrup",
-        price: 25,
-        color: "#33505a",
-        image:
-            "https://images-na.ssl-images-amazon.com/images/I/71rUP3ZW4NL.jpg"),
+  static List<Item> items = [
+   
   ];
 }
 
 class Item {
-  int id = 1;
-  String name;
-  String desc;
-  num price;
-  String color;
-  String image;
+   String id;
+   String name;
+   String desc;
+   String price;
+   String color;
+   String image;
 
   Item(
       {required this.id,
@@ -26,4 +19,25 @@ class Item {
       required this.price,
       required this.color,
       required this.image});
+
+
+    factory Item.fromMap(Map<String, dynamic> map) {
+    return Item(
+        id: map["id"],
+        name: map["name"],
+        desc: map["desc"],
+        price: map["price"],
+        color: map["color"],
+        image: map["image"]);
+  }
+  toMap() => {
+        "id": id,
+        "name": name,
+        "desc": desc,
+        "price": price,
+        "color": color,
+        "image": image,
+      };
+
+ 
 }
