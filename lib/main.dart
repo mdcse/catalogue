@@ -1,8 +1,8 @@
+import 'package:google_fonts/google_fonts.dart';
 import 'package:flutter/material.dart';
 import 'pages/login_page.dart';
-import 'utils/routes.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'pages/home_page.dart';
+import 'utils/routes.dart';
 
 void main() {
   runApp(MyApp());
@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
       themeMode: ThemeMode.light,
       theme: ThemeData(
         primarySwatch: Colors.indigo,
-        fontFamily: GoogleFonts.lato().fontFamily,
+        fontFamily: GoogleFonts.poppins().fontFamily,
         appBarTheme: AppBarTheme(
           backgroundColor: Colors.white,
           elevation: 0.0,

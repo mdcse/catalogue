@@ -26,7 +26,7 @@
         },
         {
             "id": "4",
-            "name": "The Lion and Rabbit",
+            "name": "Lion and Rabbit",
             "price": "400",
             "desc": "Story Book",
             "color": "#33505a",
@@ -34,7 +34,7 @@
         },
         {
             "id": "5",
-            "name": "PThe tale of Pettre Rabbit",
+            "name": "Pettre Rabbit",
             "price": "200",
             "desc": "Story Book",
             "color": "#33505a",
@@ -74,7 +74,7 @@
         },
         {
             "id": "4",
-            "name": "The Lion and Rabbit",
+            "name": "Lion and Rabbit",
             "price": "400",
             "desc": "Story Book",
             "color": "#33505a",
@@ -82,7 +82,7 @@
         },
         {
             "id": "5",
-            "name": "PThe tale of Pettre Rabbit",
+            "name": "Tale of Pettre Rabbit",
             "price": "200",
             "desc": "Story Book",
             "color": "#33505a",
